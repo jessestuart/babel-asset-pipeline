@@ -4,7 +4,9 @@
   "description": "babel.js transformation for asset-pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "gradle test"
+    "test": "gradle test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
     "react-hot-loader": "^1.3.0",
     "require-error-handler-webpack-plugin": "0.0.2",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
-  }
+    "webpack-dev-server": "^1.14.1",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
